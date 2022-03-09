@@ -48,6 +48,8 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 # 3rd party gem to handle images
 gem 'carrierwave', '~> 2.2', '>= 2.2.2'
 
+gem 'mini_magick', '~> 4.11'
+
 #css tailwind
 gem 'tailwindcss-rails'
 
