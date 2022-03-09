@@ -42,7 +42,13 @@ gem "tzinfo-data", platforms: %i[ mingw mswin x64_mingw jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
 
+# 3rd party authentication gem
 gem 'devise', '~> 4.8', '>= 4.8.1'
+
+# 3rd party gem to handle images
+gem 'carrierwave', '~> 2.2', '>= 2.2.2'
+
+#css tailwind
 gem 'tailwindcss-rails'
 
 # Use Sass to process CSS
