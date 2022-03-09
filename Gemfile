@@ -53,6 +53,10 @@ gem 'mini_magick', '~> 4.11'
 #css tailwind
 gem 'tailwindcss-rails'
 
+
+
+gem "activestorage", ">= 7.0.2.3"
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
