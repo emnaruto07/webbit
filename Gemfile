@@ -53,7 +53,7 @@ gem 'mini_magick', '~> 4.11'
 #css tailwind
 gem 'tailwindcss-rails'
 
-
+gem 'inline_svg', '~> 1.8'
 
 gem "activestorage", ">= 7.0.2.3"
 
