@@ -1,11 +1,7 @@
-<div class="w-full">
+<div class="mx-auto md:w-2/3 w-full">
+  <h1 class="font-bold text-4xl mt-2 font-extrabold font-nunito">New submission</h1>
 
-  <div class="flex justify-between items-center">
-    <h1 class="font-extrabold font-nunito text-4xl m-2">Post Job</h1>
-    <%= link_to 'New submission', new_submission_path, class: "font-extrabold font-nunito rounded-lg py-3 px-5 m-2 bg-blue-600 text-white block font-medium" %>
-  </div>
+  <%= render "form", submission: @submission %>
 
-  <div id="submissions" class="min-w-full">
-    <%= render @submissions %>
-  </div>
+  <%= link_to 'Back to submissions', submissions_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium font-extrabold font-nunito" %>
 </div>
