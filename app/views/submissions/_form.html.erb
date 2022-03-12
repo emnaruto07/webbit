@@ -1,4 +1,4 @@
-<%= form_with(model: submission, class: "contents") do |form| %>
+<%= form_with(model: submission, class: "contents font-extrabold font-nunito") do |form| %>
   <% if submission.errors.any? %>
     <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
       <h2><%= pluralize(submission.errors.count, "error") %> prohibited this submission from being saved:</h2>
@@ -12,31 +12,31 @@
   <% end %>
 
   <div class="my-5">
-    <%= form.label :title %>
+    <%= form.label :title, class: "font-extrabold font-nunito" %>
     <%= form.text_field :title, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
-    <%= form.label :body %>
+    <%= form.label :body, class: "font-extrabold font-nunito" %>
     <%= form.text_area :body, rows: 4, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
-    <%= form.label :url %>
+    <%= form.label :url, class: "font-extrabold font-nunito" %>
     <%= form.text_field :url, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="my-5">
-    <%= form.label :submission_image %>
+    <%= form.label :submission_image, class: "font-extrabold font-nunito" %>
     <%= form.file_field :submission_image, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
-  <div class="my-5">
-    <%= form.label :submission_video %>
+  <div class="my-5 ">
+    <%= form.label :submission_video, class: "font-extrabold font-nunito" %>
     <%= form.file_field :submission_video, class: "block shadow rounded-md border border-gray-200 outline-none px-3 py-2 mt-2 w-full" %>
   </div>
 
   <div class="inline">
-    <%= form.submit class: "rounded-lg py-3 px-5 bg-blue-600 text-white inline-block font-medium cursor-pointer" %>
+    <%= form.submit class: "rounded-lg py-3 px-5 bg-yellow-300 text-black inline-block font-medium cursor-pointer font-extrabold font-nunito" %>
   </div>
 <% end %>
