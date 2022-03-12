@@ -2,7 +2,6 @@
   <% if submission.errors.any? %>
     <div id="error_explanation" class="bg-red-50 text-red-500 px-3 py-2 font-medium rounded-lg mt-3">
       <h2><%= pluralize(submission.errors.count, "error") %> prohibited this submission from being saved:</h2>
-
       <ul>
         <% submission.errors.each do |error| %>
           <li><%= error.full_message %></li>
@@ -37,6 +36,6 @@
   </div>
 
   <div class="inline">
-    <%= form.submit class: "rounded-lg py-3 px-5 bg-yellow-300 text-black inline-block font-medium cursor-pointer font-extrabold font-nunito" %>
+    <%= form.submit class: "rounded-lg py-3 px-5 bg-yellow-300 text-black inline-block cursor-pointer font-extrabold font-nunito" %>
   </div>
 <% end %>

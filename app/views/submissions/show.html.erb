@@ -3,10 +3,10 @@
 
     <%= render @submission %>
 
-    <%= link_to 'Edit this submission', edit_submission_path(@submission), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Edit this submission', edit_submission_path(@submission), class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-extrabold font-nunito" %>
     <div class="inline-block ml-2">
-      <%= button_to 'Destroy this submission', submission_path(@submission), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-medium" %>
+      <%= button_to 'Destroy this submission', submission_path(@submission), method: :delete, class: "mt-2 rounded-lg py-3 px-5 bg-gray-100 font-extrabold font-nunito" %>
     </div>
-    <%= link_to 'Back to submissions', submissions_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-medium" %>
+    <%= link_to 'Back to submissions', submissions_path, class: "ml-2 rounded-lg py-3 px-5 bg-gray-100 inline-block font-extrabold font-nunito" %>
   </div>
 </div>
