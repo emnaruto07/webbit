@@ -1,26 +1,28 @@
 <div id="<%= dom_id submission %>">
   <p class="my-5">
-    <strong class="block font-medium mb-1">Title:</strong>
+    <strong class="block font-bold font-nunito mb-1">Title:</strong>
     <%= submission.title %>
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Body:</strong>
+    <strong class="block font-bold font-nunito mb-1">Body:</strong>
     <%= submission.body %>
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Url:</strong>
+    <strong class="block font-bold font-nunito mb-1">Url:</strong>
     <%= submission.url %>
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Submission Image:</strong>
-    <%= image_tag submission.submission_image_url, width: 400 %>
+    <strong class="block font-bold font-nunito mb-1">Submission Image:</strong>
+    <% if submission.submission_image_url %>
+      <%= image_tag submission.submission_image_url, width: 400 %>
+    <% end %>
   </p>
 
   <p class="my-5">
-    <strong class="block font-medium mb-1">Submission Video:</strong>
+    <strong class="block font-bold font-nunito mb-1">Submission Video:</strong>
     <%#= submission.submission_video %>
   </p>
 
