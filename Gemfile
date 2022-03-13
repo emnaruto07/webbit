@@ -57,6 +57,7 @@ gem 'inline_svg', '~> 1.8'
 
 gem "activestorage", ">= 7.0.2.3"
 
+gem 'sass-rails'
 # Use Sass to process CSS
 # gem "sassc-rails"
 
